@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mi Portfolio Personal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/504732a4b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="logo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header">Inicio</a></li>
+				<li><a href="#about">Sobre Mi</a></li>
+				<li><a href="#services">Servicios</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contacto</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p>Diseñador web, Empaquetador y envios</p>
+			<h1>Hola, Soy <span>Poggi Hector</span><br> de Argentina</h1>
+		</div>	
+	</div>
+</div>
+<!-- --------------about-------------------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="yo.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">Sobre Mi</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+					<p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+					<p class="tab-links" onclick="opentab('educacion')">Educacion</p>
+				</div>
+				<div class="tab-contents active-tab" id="habilidades">
+					<ul>
+						<li><span>Diseñador web</span><br>HTML,CSS
+						</li>
+						<li><span>Empaquetador</span><br>embalar, gestionar
+						</li>
+						<li><span>Envios</span><br>Tambien por correo.
+						</li>
+					</ul>
+				</div>
+					<div class="tab-contents" id="experiencia">
+					<ul>
+						<li>
+							<span>Diseñador web</span><br>Estoy aprendiendo lo basico.
+						</li>
+						<li>
+							<span>Empaquetador</span><br>puedo armar paquetes.
+						</li>
+						<li>
+							<span>Envios</span><br>puedo moverme a determinado lugar o enviar al correo en diferentes localidades.
+						</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="educacion">
+					<ul>
+						<li>
+							<span>Colegio</span><br>Secundaria, Bachiller
+						</li>
+						<li>
+							<span>Instituo</span><br>Instituto Parroquial Cristo Rey
+						</li>
+						<li>
+							<span>Años</span><br>
+							2000-2013
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- -----------------services-------------- -->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">Mis Servicios</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Diseñador Web</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<a href="#">Aprender Más</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-crop"></i>
+				<h2>HTML, CSS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<a href="#">Aprender Más</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-app-store-ios"></i>
+				<h2>Junior Basico</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<a href="#">Aprender Más</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- -------------------portfolio------------- -->
+
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">Mi Trabajo</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="trabajo1.jpg">
+				<div class="layer">
+					<h3>C.V Ficha</h3>
+					<p>Ficha pequeña de Curriculums Vitae</p>
+					<a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="trabajo2.jpg">
+				<div class="layer">
+					<h3>Embalador</h3>
+					<p>Empaquetamientos de paquetes, embajalaje</p>
+					<a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="trabajo3.jpg">
+				<div class="layer">
+					<h3>Envios</h3>
+					<p>Los paquetes se envian por mis propias manos hasta cualquier punto de correo o zona de entrega.</p>
+					<a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">Ver Más</a>
+	</div>
+</div>
+
+<!-- ----------------------contactos---------- -->
+
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1>Contáctame</h1>
+				<p><i class="fa-regular fa-paper-plane"></i>hectorpoggi95@gmail.com</p>
+				<p><i class="fa-solid fa-phone"></i>115514440</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/Ryodan.AkA.Poggi/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://api.whatsapp.com/send?phone=5401166144409&text=Contactenme"><i class="fa-brands fa-whatsapp"></i></a>
+					<a href="https://www.linkedin.com/in/hector-poggi-04443524a/"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/ahre_poggi/"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+				<a href="CVPoggi2022.pdf" download class="btn btn2">Descargar CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Tu Nombre">
+					<input type="email" name="Email" placeholder="Tu Email" required>
+					<textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
+					<button type="submit" class="btn btn2">Enviar</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright <i class="fa-regular fa-copyright"></i> Poggi. Hecho por Hector Poggi.</p>
+	</div>
+</div>
+
+
+<script>
+
+	var	tablinks = document.getElementsByClassName("tab-links");
+	var	tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		} 
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+<script>
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu() {
+		sidemenu.style.right = "0";
+	}
+	function closemenu() {
+		sidemenu.style.right = "-200px";
+	}
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz3RbYHjAX2SFa3FnsFaxq_E11ZfeDwFjkouFHAO2Cht5PqrIclH4aXvJFPmhBDUhMf/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      	msg.innerHTML ="Mensaje enviado"
+      	setTimeout(function(){
+      		msg.innerHTML = ""
+      	},5000)
+      	form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
